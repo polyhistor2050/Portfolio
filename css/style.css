@@ -106,6 +106,13 @@ a:hover {
 }
 
 
+/* About Section */
+.my-pic{
+  height: 70vh;
+  object-fit: cover;
+  object-position: middle;
+}
+
 
 
 
