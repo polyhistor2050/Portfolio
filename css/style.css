@@ -95,3 +95,29 @@ a:hover {
 .home{
   background-color: var(--dark);
 }
+.tag{
+  width: 100px;
+}
+.top-tag{
+  margin-right: 30rem;
+}
+.bottom-tag{
+  margin-left: 30rem;
+}
+
+
+
+
+
+/* Footer Section */
+footer {
+  background-color: var(--dark);
+  color: var(--white);
+  text-align: center;
+}
+.contact-me {
+  padding-top: 5%;
+}
+.bottom-section {
+  padding: 50px 0 20px;
+}
