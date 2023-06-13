@@ -23,6 +23,7 @@
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
+  --custom-blue: #00acee;
   --warning: #ffc107;
   --danger: #dc3545;
   --light: #ffffff;
@@ -71,29 +72,31 @@ hr {
   overflow: visible;
 }
 
-h1, h2, h3, h4, h5, h6 {
- 
+/* Navbar Section */
+.navbar{
+  background-color: var(--dark);
+  color: var(--white);
+}
+.navbar-nav{
+  margin: 20px 0 0 auto;
+  font-size: 22px;
 }
 
-p {
-
+a.nav-item{
+  color: var(--white);
+  margin-left: 20px;
+}
+a.nav-item:hover, a.nav-item:active{
+  border-bottom: 3px solid var(--custom-blue);
 }
 
-a {
-  color: #0BCEAF;
-  text-decoration: none;
-  background-color: transparent;
-}
-
-a:hover {
-  color: #078571;
-}
 
 
 
 /* Header Section */
 .home{
   background-color: var(--dark);
+  color: var(--white);
 }
 .tag{
   width: 100px;
@@ -105,14 +108,80 @@ a:hover {
   margin-left: 30rem;
 }
 
+/* Button */
+.btn{
+  margin: 15px 10px 15px 10px;
+}
+
 
 /* About Section */
 .my-pic{
-  height: 70vh;
+  height: 55vh;
   object-fit: cover;
   object-position: middle;
 }
 
+
+
+
+/* Skills Section */
+#skill{
+  background-color: var(--dark);
+  color: var(--white);
+}
+.service-card .body {
+  padding: 10px;
+  min-height: 230px;
+}
+
+.service-card .body img.icon {
+  margin-top: 40px;
+  width: 55px;
+  margin-bottom: 25px;
+  -webkit-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .service-card .body img.icon {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.service-card .body .subtitle {
+  position: absolute;
+  bottom: -100%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .service-card .body .subtitle {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.service-card:hover .body img.icon {
+  margin-top: 5px;
+  width: 45px;
+  margin-bottom: 15px;
+}
+
+.service-card:hover .body .subtitle {
+  bottom: 7px;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+#service{
+  background-color: var(--dark);
+  color: var(--white);
+}
 
 
 
@@ -127,4 +196,14 @@ footer {
 }
 .bottom-section {
   padding: 50px 0 20px;
+}
+
+/* Scroll to the bottom */
+.scroll-to-bottom {
+  position: fixed;
+  width: 20px;
+  left: calc(50% - 10px);
+  bottom: 30px;
+  z-index: 11;
+  animation: action 1s infinite alternate;
 }
